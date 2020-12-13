@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title> Los Encinos Ranch </title>
+</head>
+
+<body>
+
+  <header id="Heading">
+    <!-- Hidden slide menu; appears after clicking burger -->
+    <div class="overlay" id="myNav" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="home">OUR STORY</a>
+        <a href="stallions">STALLIONS</a>
+        <a href="studservices">STUD SERVICES</a>
+        <a href="mares">MARES</a>
+        <a href="foals">FOALS</a>
+        <a href="contact">Contact</a></div>
+    </div>
+
+      <!-- IMG of Ranch logo -->
+      <div class="logoContainer">
+        <img class="logoIMG" src="img/RanchLogo.PNG" alt="Ranch Los Encinos">
+      </div>
+
+      <!-- Items of menu -->
+      <div class="itemsContainer ">
+        <nav>
+          <ul class="items">
+            <li> <a href="home">OUR STORY</a> </li>
+            <li> <a href="stallions">STALLIONS</a> </li>
+            <li> <a href="studservices">STUD SERVICES</a> </li>
+            <li> <a href="mares">MARES</a> </li>
+            <li> <a href="foals">FOALS</a> </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Convenient Contact button -->
+      <div class="contactContainer">
+        <a href="contact" class="buttons"> <button>Contact</button> </a>
+      </div>
+
+      <!-- The burger -->
+      <div class="burgerContainer">
+        <span onclick="openNav()">
+          <button class="buttons">
+            <div> </div>
+            <div> </div>
+            <div> </div>
+          </button>
+        </span>
+      </div>
+
+  </header>
+
+  <!-- horses for this page -->
+  <div>
+    <img class="rounded mx-auto d-block" src="img/foals1.JPG" alt="Ranch Los Encinos">
+  </div>
+  <div>
+    <img class="rounded mx-auto d-block" src="img/foals2.JPG" alt="Ranch Los Encinos">
+  </div>
+
+
+    <br>
+    <br>
+
+    <!-- Email, LinkedIn, and GitHub links -->
+    <div class="row">
+
+      <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
+        <a href="mailto:rancholosencinosjv@gmail.com">
+          <i class="fa fa-envelope fa-4x sr-icons"></i>
+        </a>
+        <p><a href="mailto:rancholosencinosjv@gmail.com" >Email</a></p>
+      </div>
+
+      <div class="col-4 col-sm-4 col-lg-2 text-center">
+        <a href="https://www.instagram.com/el_sesech/">
+          <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
+        </a>
+        <p><a href="https://www.instagram.com/el_sesech/" >Instagram</a></p>
+      </div>
+
+      <div class="col-4 col-sm-4 col-lg-2 text-center">
+        <a href="https://www.facebook.com/jesus.valdez99">
+          <i class="fa fa-github-square fa-4x sr-icons"></i>
+        </a>
+        <p><a href="https://www.facebook.com/jesus.valdez99" >Facebook</a></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <p class="text-center text-muted text-small mb-1">
+        Ranch Los Encinos &copy; 2020. All rights reserved.
+        Powered by <a href="https://www.linkedin.com/in/andres-mancilla-valdez/" class="text-blue">Andres Mancilla Valdez</a>.
+      </p>
+      <p class="text-center text-muted text-small">
+        Source on <a href="https://github.com/a1mancil" class="text-blue">GitHub</a>.
+      </p>
+    </div>
+
+
+
+
+    <!-- javascript -->
+    <script src="app.js"> </script>
+    <script src="https://use.fontawesome.com/c80b81786d.js"></script>
+  </body>
+</html>
