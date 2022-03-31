@@ -15,6 +15,8 @@ header{
 /* Fix issues when resizing */
 body{
   background-color: rgb(220,220,220);
+  position: absolute;
+  width: 100%;
 }
 
 .MyWrapper{
@@ -25,16 +27,21 @@ body{
 
 }
 
-img{
-  height:730px;
-  width:670px;
-
+img {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+  border: 0;
 }
+
 
 /* Image resize */
 .logoIMG{
   height:110px;
   width:270px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 /* Containers */

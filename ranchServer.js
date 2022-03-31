@@ -68,12 +68,11 @@ app.get("/foals", function(req, res){
 
 
 
-
 // Listen on both http, https 
 
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer({
-	  key: fs.readFileSync('/etc/letsencrypt/live/rancholosencinos.com/privkey.pem'),
+	key: fs.readFileSync('/etc/letsencrypt/live/rancholosencinos.com/privkey.pem'),
 	  cert: fs.readFileSync('/etc/letsencrypt/live/rancholosencinos.com/fullchain.pem'),
 }, app);
 

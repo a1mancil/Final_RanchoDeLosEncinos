@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/9e5afbc333.js" crossorigin="anonymous"></script>
+
 
   <title> Los Encinos Ranch </title>
 </head>
 
 <body>
+
+
+<div class="MyWrapper">
 
   <header id="Heading">
     <!-- Hidden slide menu; appears after clicking burger -->
@@ -27,88 +30,126 @@
         <a href="contact">Contact</a></div>
     </div>
 
-      <!-- IMG of Ranch logo -->
-      <div class="logoContainer">
-        <a href="home"> <img class="logoIMG" src="img/RanchLogo.PNG" alt="Ranch Los Encinos"></a>
-      </div>
+    <!-- IMG of Ranch logo -->
+    <div class="logoContainer">
+      <a href="home"> <img class="logoIMG" src="img/RanchLogo.webp" alt="Ranch Los Encinos"></a>
+    </div>
 
-      <!-- Items of menu -->
-      <div class="itemsContainer ">
-        <nav>
-          <ul class="items">
-            <li> <a href="home">OUR STORY</a> </li>
-            <li> <a href="stallions">STALLIONS</a> </li>
-            <li> <a href="studservices">STUD SERVICES</a> </li>
-            <li> <a href="mares">MARES</a> </li>
-            <li> <a href="foals">FOALS</a> </li>
-          </ul>
-        </nav>
-      </div>
 
-      <!-- Convenient Contact button -->
-      <div class="contactContainer">
-        <a href="contact" class="buttons"> <button>Contact</button> </a>
-      </div>
+    <!-- Items of menu -->
+    <div class="itemsContainer ">
+      <nav>
+        <ul class="items">
+          <li> <a href="home">OUR STORY</a> </li>
+          <li> <a href="stallions">STALLIONS</a> </li>
+          <li> <a href="studservices">STUD SERVICES</a> </li>
+          <li> <a href="mares">MARES</a> </li>
+          <li> <a href="foals">FOALS</a> </li>
+        </ul>
+      </nav>
+    </div>
 
-      <!-- The burger -->
-      <div class="burgerContainer">
-        <span onclick="openNav()">
-          <button class="buttons">
-            <div> </div>
-            <div> </div>
-            <div> </div>
-          </button>
-        </span>
-      </div>
+    <!-- Convenient Contact button -->
+    <div class="contactContainer">
+      <a href="contact" class="buttons"> <button>Contact</button> </a>
+    </div>
+
+    <!-- The burger -->
+    <div class="burgerContainer">
+              <span onclick="openNav()">
+                <button class="buttons">
+                  <div> </div>
+                  <div> </div>
+                  <div> </div>
+                </button>
+              </span>
+    </div>
 
   </header>
 
   <!-- horses for this page -->
   <div>
-    <img src="img/landingPage.jpg" class="rounded mx-auto d-block" alt="Ranch Los Encinos">
+    <img src="img/mare.webp" class="rounded mx-auto d-block" alt="Ranch Los Encinos">
   </div>
+
+
+
+  <br>
+  <br>
+
+  <!-- Contact section -->
+  <section class="min-padding" id="contact">
+    <div class="container">
+
+      <!-- Contact Andres Row -->
+
+      <hr class="primary">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">
+
+            <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
+            Contact Rancho De Los Encinos</h2>
+          <hr class="primary">
+          <p> For any <strong>business inquires</strong>, please fill in the form below:</p>
+
+          <!-- Really avoiding spam by sending emails to the spam box
+               Docs URL: https://formspree.io/
+               Also, Bootstrap forms: https://getbootstrap.com/docs/3.3/css/#forms -->
+          <form action="https://formspree.io/xjvaqdgv" method="POST" class="form-horizontal" role="form">
+            <!-- Need a name, reply to email, and a message -->
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your message" class="form-control" required></textarea>
+            </div>
+            <!-- Hidden elements here -->
+            <input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
+            <input type="hidden" name="_next" value="thanks.html" />
+            <!-- Submit button -->
+            <div class="form-group">
+              <button type="button" name="button">
+                <input type="submit" value="Email Us" class="btn text-white">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <br>
   <br>
 
   <!-- Email, LinkedIn, and GitHub links -->
-  <div class="row">
-
-    <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
-      <a href="mailto:rancholosencinosjv@gmail.com">
-        <i class="fa fa-envelope fa-4x sr-icons"></i>
-      </a>
-      <p><a href="mailto:rancholosencinosjv@gmail.com" >Email</a></p>
-    </div>
-
-    <div class="col-4 col-sm-4 col-lg-2 text-center">
-      <a href="https://www.instagram.com/el_sesech/">
-        <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
-      </a>
-      <p><a href="https://www.instagram.com/el_sesech/" >Instagram</a></p>
-    </div>
-
-    <div class="col-4 col-sm-4 col-lg-2 text-center">
-      <a href="https://www.facebook.com/jesus.valdez99">
-        <i class="fa fa-github-square fa-4x sr-icons"></i>
-      </a>
-      <p><a href="https://www.facebook.com/jesus.valdez99" >Facebook</a></p>
-    </div>
+  <div class="sm">
+    <a href="https://www.facebook.com/Rancho-De-Los-Encinos-103009231489094" class="myFooter"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/rancho_de_los_encinos/" class="myFooter"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/andres-mancilla-valdez/" class="myFooter"><i class="fab fa-linkedin-in"></i></a>
   </div>
 
+  <br>
+
   <!-- Footer -->
-  <div class="container">
+  <div class="sm">
     <p class="text-center text-muted text-small mb-1">
-      Ranch Los Encinos &copy; 2020. All rights reserved.
-      Powered by <a href="https://www.linkedin.com/in/andres-mancilla-valdez/" class="text-blue">Andres Mancilla Valdez</a>.
-    </p>
-    <p class="text-center text-muted text-small">
+      Ranch De Los Encinos &copy; 2021. All rights reserved.
+      Created by <a href="https://www.linkedin.com/in/andres-mancilla-valdez/">Andres Mancilla Valdez</a>.
+      <br>
       Source on <a href="https://github.com/a1mancil" class="text-blue">GitHub</a>.
     </p>
   </div>
+  <br>
+  <br>
 
-  <!-- javascript -->
-  <script src="app.js"> </script>
-  <script src="https://use.fontawesome.com/c80b81786d.js"></script>
+</div>
+
+
 </body>
+<!-- javascript -->
+<script src="app.js"> </script>
 </html>
